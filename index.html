@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, width=device-width, height=device-height, viewport-fit=cover">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<title>SVG</title>
+		<link media="all" rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<h2>SVG Sprites</h2>
+			<p>Create the file spite-icons.svg or something.</p>
+			<p>It should just be an <code>&lt;svg&gt;</code> tag, with a <code>&lt;defs&gt;</code>> tag (which just means you are defining stuff to use later), and then a bunch of <code>&lt;symbol&gt;</code> tags. Each <code>&lt;g&gt;</code> tag will have a unique ID, and will wrap all the paths and whatnot for each icon.</p>
+			<ul class="svg-list">
+				<li>
+					<svg width="24" height="22">
+						<use xlink:href="images/sprite-icons.svg#ico-star"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="24">
+						<use xlink:href="images/sprite-icons.svg#ico-message"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="22">
+						<use xlink:href="images/sprite-icons.svg#ico-download"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="24">
+						<use xlink:href="images/sprite-icons.svg#ico-share"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="22">
+						<use xlink:href="images/sprite-icons.svg#instagram"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="24">
+						<use xlink:href="images/sprite-icons.svg#facebook"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="22">
+						<use xlink:href="images/sprite-icons.svg#pinterest"></use>
+					</svg>
+				</li>
+				<li>
+					<svg width="24" height="24">
+						<use xlink:href="images/sprite-icons.svg#linkedin"></use>
+					</svg>
+				</li>
+			</ul>
+			<p>It's a magic :)</p>
+			<p>You can used a svg prite generator <a href="https://svgsprit.es/">https://svgsprit.es/</a></p>
+			<p>Referred to articles:</p>
+			<a href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/">https://css-tricks.com/svg-sprites-use-better-icon-fonts/</a>
+			<a href="https://css-tricks.com/svg-symbol-good-choice-icons/">https://css-tricks.com/svg-symbol-good-choice-icons/</a>
+		</div>
+	</body>
+</html>
